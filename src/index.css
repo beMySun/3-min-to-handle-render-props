@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:900');
+
+* {
+  box-sizing: border-box;
+}
+#root {
+  width: 100%;
+}
+body {
+  background: linear-gradient(35deg, #111, #fafafa);
+  display: flex;
+  font-family: 'Exo', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+}
+#app {
+  align-items: center;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 150px));
+  justify-content: center;
+  justify-items: center;
+  padding: 10rem 0;
+  width: 100%;
+}
+#app > div {
+  background: repeating-linear-gradient(30deg, var(--strapColor) 0, var(--strapColor) 5px, transparent 5px, transparent 10px) 5px 0/90% 100% no-repeat, repeating-linear-gradient(-30deg, transparent 0, transparent 5px, var(--strapColor) 5px, var(--strapColor) 10px) 5px 0/90% 100% no-repeat, var(--strapBg);
+}
+#app > div:nth-of-type(1) {
+  --strapColor: rgba(165,55,253,0.25);
+  --strapBg: #be90d4;
+}
+#app > div:nth-of-type(2) {
+  --strapColor: rgba(41,241,195,0.25);
+  --strapBg: #29c3b9;
+}
+#app > div:nth-of-type(3) {
+  --strapColor: rgba(89,171,227,0.25);
+  --strapBg: #81cfe0;
+}
+#app > div:nth-of-type(4) {
+  --strapColor: rgba(246,36,89,0.25);
+  --strapBg: #e26a6a;
+}
+#app > div:nth-of-type(5) {
+  --strapColor: rgba(245,229,27,0.25);
+  --strapBg: #fef160;
+}
